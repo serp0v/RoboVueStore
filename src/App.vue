@@ -221,4 +221,59 @@
             color: white;
         }
     }
+    @media(max-width: 580px) {
+        .company-name {
+            font-size: 64px;
+        }
+        .company-description {
+            font-size: 32px;
+            margin-top: -18px;
+        }
+        .footer-container {
+            font-size: 16px;
+            margin-bottom: -3px;
+        }
+    }
+    @media(max-width: 390px) {
+        .company-name {
+            font-size: 48px;
+        }
+        .company-description {
+            font-size: 24px;
+            margin-top: -12px;
+        }
+        .footer-container {
+            font-size: 12px;
+            margin-bottom: -3px;
+        }
+    }
+    @media(max-height: 700px) {
+        .burger-menu {
+            margin-top: 0;
+        }
+
+    }
+    @media(max-height: 530px) {
+        .logo {
+            font-size: 24px;
+        }
+        .footer-container {
+            font-size: 16px;
+            margin-bottom: -3px;
+        }
+        .burger-menu {
+            height: 27px;
+            width: 21px;
+            margin-top: 3px;
+        }
+    }
+    @media(max-height: 420px) {
+        .company-name {
+            font-size: 48px;
+        }
+        .company-description {
+            font-size: 24px;
+            margin-top: -12px;
+        }
+    }
 </style>
