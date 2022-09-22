@@ -19,6 +19,16 @@
                     </button>
                 </div>
             </div>
+            <div class="header-container-mobile">
+                <div class="logo"><p>RoboVue</p></div>
+                <div class="burger-menu">
+                    <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.522476" x2="33" y2="0.522476" stroke="white"/>
+                        <line y1="12.1404" x2="33" y2="12.1404" stroke="white"/>
+                        <line y1="23.7584" x2="33" y2="23.7584" stroke="white"/>
+                    </svg>
+                </div>
+            </div>
         </header>
 
         <main class="main-wrapper">
@@ -52,29 +62,26 @@
         font-family: 'Oswald', sans-serif;
     }
     body, html {
-        margin: 0;
-        padding: 0;
-    }
-    body {
         height: 100vh;
         width: 100vw;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
     .wrapper {
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
     }
     /* header-wrapper */
     
     .header-wrapper {
         width: 100%;
-        height: 8.703vh;
+        height: 8.703%;
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: rgb(0, 0, 0); */
     }
     .header-container {
         max-width: 1102px;
@@ -133,11 +140,6 @@
     .log-sign > button ~ button {
         margin-left: 43px;
     }
-    /* .log-in {
-
-    }
-    .sign-up {
-    } */
     .main-wrapper {
         height: 82.5925vh;
         width: 100%;
@@ -161,15 +163,15 @@
     }
     .footer-wrapper {
         height: 8.703vh;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgb(0, 0, 0);
     }
     .footer-container {
-        max-width: 1102px;
-        margin: 0 auto;
-        height: 60px;
+        /* max-width: 1102px; */
+        /* height: 60px; */
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -183,5 +185,40 @@
         justify-content: center;
         align-items: center;
         display: flex;
+    }
+    /* mobile */
+    .header-container-mobile {
+        display: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+        margin-left: auto;
+    }
+    @media(max-width: 1200px) {
+        .header-wrapper {
+            background-color: rgb(0, 0, 0);
+        }
+        .header-container {
+            background-color: rgb(0, 0, 0);
+            display: none;
+        }
+        .footer-wrapper {
+        }
+        .footer-container {
+        }
+        .header-container-mobile {
+            display: flex;
+        }
+        .logo {
+            border: none;
+            color: white;
+        }
     }
 </style>
