@@ -98,4 +98,19 @@
     .log-sign > button ~ button {
         margin-left: 43px;
     }
+        /* mobile */
+    .header-container-mobile {
+        display: none;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6px;
+        margin-left: auto;
+    }
 </style>

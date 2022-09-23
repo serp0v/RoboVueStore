@@ -1,6 +1,7 @@
 <template>
     <robo-header />
     <robo-main />
+    <robo-footer />
 
     <div class="wrapper">
         <footer class="footer-wrapper">
@@ -8,7 +9,6 @@
                 <p class="licence">Nothing is not protected. Even robots. Beep Boop.</p>
             </div>
         </footer>
-        
     </div>
 </template>
 
@@ -19,10 +19,12 @@ export default {
     components: {
         RoboHeader,
         RoboMain,
+        RoboFooter,
     }
 }
     import RoboHeader from "./components/RoboHeader.vue";
     import RoboMain from "./components/RoboMain.vue";
+    import RoboFooter from "./components/RoboFooter.vue";
 </script>
 
 <style>
@@ -32,8 +34,6 @@ export default {
         font-family: 'Oswald', sans-serif;
     }
     body, html {
-        height: 100vh;
-        width: 100vw;
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -43,46 +43,6 @@ export default {
         width: 100vw;
         display: flex;
         flex-direction: column;
-    }
-    .footer-wrapper {
-        height: 8.703vh;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(0, 0, 0);
-    }
-    .footer-container {
-        /* max-width: 1102px; */
-        /* height: 60px; */
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 24px;
-        margin-bottom: -3px;
-    }
-    .licence {
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-    }
-    /* mobile */
-    .header-container-mobile {
-        display: none;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        padding: 0 20px;
-    }
-    .burger-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 6px;
-        margin-left: auto;
     }
     @media(max-width: 1200px) {
         .header-wrapper {
