@@ -1,13 +1,8 @@
 <template>
     <robo-header />
-    <div class="wrapper">
-        <main class="main-wrapper">
-            <div class="main-container">
-                <div class="company-name">RoboVue</div>
-                <div class="company-description">The largest online store of robots<br>in the world.</div>
-            </div>
-        </main>
+    <robo-main />
 
+    <div class="wrapper">
         <footer class="footer-wrapper">
             <div class="footer-container">
                 <p class="licence">Nothing is not protected. Even robots. Beep Boop.</p>
@@ -22,10 +17,12 @@ export default {
     // setup() {
     // },
     components: {
-        RoboHeader
+        RoboHeader,
+        RoboMain,
     }
 }
     import RoboHeader from "./components/RoboHeader.vue";
+    import RoboMain from "./components/RoboMain.vue";
 </script>
 
 <style>
@@ -46,27 +43,6 @@ export default {
         width: 100vw;
         display: flex;
         flex-direction: column;
-    }
-    .main-wrapper {
-        height: 82.5925vh;
-        width: 100%;
-        display: flex;
-    }
-    .main-container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .company-name {
-        font-size: 96px;
-    }
-    .company-description {
-        font-size: 48px;
-        margin-top: -27px;
     }
     .footer-wrapper {
         height: 8.703vh;
