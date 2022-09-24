@@ -4,11 +4,6 @@
     <robo-footer />
 
     <div class="wrapper">
-        <footer class="footer-wrapper">
-            <div class="footer-container">
-                <p class="licence">Nothing is not protected. Even robots. Beep Boop.</p>
-            </div>
-        </footer>
     </div>
 </template>
 

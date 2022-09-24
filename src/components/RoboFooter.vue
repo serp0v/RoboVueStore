@@ -1,5 +1,9 @@
 <template>
-    
+    <footer class="footer-wrapper">
+        <div class="footer-container">
+            <p class="licence">Nothing is not protected. Even robots. Beep Boop.</p>
+        </div>
+    </footer>
 </template>
 
 <script>
