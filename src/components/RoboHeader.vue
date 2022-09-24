@@ -48,7 +48,6 @@
         display: flex;
         flex-direction: row;
         background-color: rgb(255, 255, 255);
-
     }
     .logo {
         display: flex;
@@ -112,5 +111,26 @@
         align-items: center;
         margin-top: 6px;
         margin-left: auto;
+    }
+    @media(max-width: 1200px) {
+        .header-wrapper {
+            background-color: rgb(0, 0, 0);
+        }
+        .header-container {
+            background-color: rgb(0, 0, 0);
+            display: none;
+        }
+        .header-container-mobile {
+            display: flex;
+        }
+        .logo {
+            border: none;
+            color: white;
+        }
+    }
+    @media (max-height: 1000px) {
+        .header-wrapper {
+            height: 94px;
+        }
     }
 </style>

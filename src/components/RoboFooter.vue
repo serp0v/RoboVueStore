@@ -33,4 +33,10 @@
         align-items: center;
         display: flex;
     }
+    @media (max-height: 1000px) {
+        .footer-wrapper {
+            /* display: none; */
+            height: 94px;
+        }
+    }
 </style>

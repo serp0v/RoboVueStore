@@ -32,4 +32,28 @@
         font-size: 48px;
         margin-top: -27px;
     }
+/*  */
+    @media(max-width: 700px) {
+        .company-name {
+            font-size: 14vw;
+        }
+        .company-description {
+            font-size: 7vw;
+            margin-top: -4vw;
+        }
+    }
+    @media (max-height: 700px) {
+        .company-name {
+            font-size: 14vh;
+        }
+        .company-description {
+            font-size: 7vh;
+            margin-top: -4vh;
+        }
+    }
+    @media (max-height: 1000px) {
+        .main-wrapper {
+            height: calc(100vh - 188px);
+        }
+    }
 </style>
