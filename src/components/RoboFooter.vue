@@ -11,8 +11,8 @@
 
 <style>
     .footer-wrapper {
-        height: 8.703vh;
-        width: 100vw;
+        height: 94px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -33,10 +33,24 @@
         align-items: center;
         display: flex;
     }
-    @media (max-height: 1000px) {
+    /* @media (max-height: 1000px) {
         .footer-wrapper {
-            /* display: none; */
             height: 94px;
+        }
+    } */
+        /* @media (max-height: 1000px) {
+        .footer-wrapper {
+            height: 94px;
+        }
+    } */
+    @media(max-width: 768px) {
+        .footer-container {
+            font-size: 20px;
+        }
+    }
+    @media(max-width: 568px) {
+        .footer-container {
+            font-size: 16px;
         }
     }
 </style>

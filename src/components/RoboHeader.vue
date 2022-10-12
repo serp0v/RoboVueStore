@@ -1,10 +1,12 @@
+                @click="showRobots()"
 <template>
     <header class="header-wrapper">
         <div class="header-container">
             <div class="logo"><p>RoboVue</p></div>
             <ul class="spa-navigation">
                 <li class="nav-item">Home</li>
-                <li class="nav-item">Robots</li>
+                <li 
+                class="nav-item">Robots</li>
                 <li class="nav-item">Software</li>
                 <li class="nav-item">Contact</li>
             </ul>
@@ -18,12 +20,12 @@
             </div>
         </div>
         <div class="header-container-mobile">
-            <div class="logo"><p>RoboVue</p></div>
+            <div class="logo">RoboVue</div>
             <div class="burger-menu">
-                <svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <line y1="0.522476" x2="33" y2="0.522476" stroke="white"/>
-                    <line y1="12.1404" x2="33" y2="12.1404" stroke="white"/>
-                    <line y1="23.7584" x2="33" y2="23.7584" stroke="white"/>
+                <svg viewBox="0 0 100 60" width="30" height="30">
+                    <rect width="100" height="12"></rect>
+                    <rect y="33" width="100" height="12"></rect>
+                    <rect y="66" width="100" height="12"></rect>
                 </svg>
             </div>
         </div>
@@ -31,12 +33,32 @@
 </template>
 
 <script>
+    // const hfghh = 123;
+    // import RoboMain from "./RoboMain.vue";
+    // export default {
+    //     data() {
+    //         return {
+    //         }
+    //     },
+    //     components: {
+    //         RoboMain,
+    //     },
+    //     methods: {
+    //         cl() {
+    //             console.log(RoboMain)
+    //         },
+    //         showRobots() {
+    //             this.display = "flex";
+    //         }
+    //     },
+        
+    // };
 </script>
 
 <style>
     .header-wrapper {
         width: 100vw;
-        height: 8.703vh;
+        height: 94px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -104,17 +126,21 @@
         height: 100%;
         align-items: center;
         padding: 0 20px;
+        border-bottom: 1px solid #000;
     }
     .burger-menu {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 6px;
+        margin-top: 1px;
+        margin-right: 7px;
         margin-left: auto;
     }
-    @media(max-width: 1200px) {
+    /* .burger-color {
+        fill: #000;
+    } */
+    /* @media(max-width: 1200px) {
         .header-wrapper {
-            background-color: rgb(0, 0, 0);
         }
         .header-container {
             background-color: rgb(0, 0, 0);
@@ -125,12 +151,25 @@
         }
         .logo {
             border: none;
-            color: white;
         }
     }
     @media (max-height: 1000px) {
         .header-wrapper {
             height: 94px;
+        }
+    } */
+    @media(max-width: 1200px) {
+        .header-wrapper {
+        }
+        .header-container {
+            background-color: rgb(0, 0, 0);
+            display: none;
+        }
+        .header-container-mobile {
+            display: flex;
+        }
+        .logo {
+            border: none;
         }
     }
 </style>
